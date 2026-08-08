@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Ghibli Natural Scrollbars */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(235, 226, 208, 0.5);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #8C6543;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #62442B;
+  }
+}
+
+/* Custom Ghibli Aesthetic Animations and Utilities */
+@keyframes cloudFloat {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-6px) translateX(4px); }
+}
+
+@keyframes leafSway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.animate-cloud-float {
+  animation: cloudFloat 6s ease-in-out infinite;
+}
+
+.animate-leaf-sway {
+  animation: leafSway 4s ease-in-out infinite;
+}
+
+.ghibli-card {
+  background-color: rgba(253, 250, 245, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(140, 101, 67, 0.18);
+  box-shadow: 0 4px 20px -2px rgba(62, 92, 78, 0.08), 0 2px 6px -1px rgba(140, 101, 67, 0.05);
+}
+
+.ghibli-card-dark {
+  background-color: rgba(38, 55, 46, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(217, 180, 140, 0.2);
+  box-shadow: 0 8px 30px rgba(18, 28, 23, 0.3);
+}
+
+.ghibli-border {
+  border-color: rgba(140, 101, 67, 0.22);
+}
+
+.ghibli-wood-btn {
+  background: linear-gradient(135deg, #8C6543 0%, #6E4D30 100%);
+  color: #FFFDF9;
+  box-shadow: 0 2px 8px rgba(110, 77, 48, 0.25);
+}
+.ghibli-wood-btn:hover {
+  background: linear-gradient(135deg, #7A5739 0%, #5B3F26 100%);
+}
+
+.ghibli-sage-btn {
+  background: linear-gradient(135deg, #4A6B5B 0%, #355043 100%);
+  color: #FFFDF9;
+  box-shadow: 0 2px 8px rgba(53, 80, 67, 0.25);
+}
+.ghibli-sage-btn:hover {
+  background: linear-gradient(135deg, #3C5A4C 0%, #293F34 100%);
+}
+
