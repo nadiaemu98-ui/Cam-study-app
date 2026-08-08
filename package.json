@@ -1,4 +1,3 @@
-
 {
   "name": "cam-study-app",
   "private": true,
@@ -10,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google/genai": "npm:@google/generative-ai@^0.21.0",
     "@google/generative-ai": "^0.21.0",
     "@tailwindcss/vite": "^4.0.0",
     "tailwindcss": "^4.0.0",
